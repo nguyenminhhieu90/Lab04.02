@@ -1,0 +1,49 @@
+#navTop{
+    width: 960px;
+    margin: 0 auto;
+    background-color: #ccc;
+    height: 40px;
+}
+#navTop ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+}
+#navTop ul li{
+    float: left;
+    border-right: solid 1px #fff;
+}
+#navTop ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 10px 30px;
+}
+.selected, #navTop ul li a:hover{
+    background-color: red;
+    color: #fff;
+}
+
+#navTop ul li>ul{
+    position: absolute;
+    width: 159px;
+    background-color: #666; 
+    visibility: hidden;
+}
+#navTop ul li>ul li{
+
+    border-bottom: 1px solid #fff;
+}
+
+#navTop ul li>ul li>ul{
+    margin-left: 159px;
+    visibility: hidden;
+    margin-top: -40px;
+}
+#navTop ul li:hover ul{
+    visibility: visible;
+}
+
+.submenu li:hover ul{
+    visibility: visible;
+}

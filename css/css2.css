@@ -1,0 +1,38 @@
+#mainNav{
+    width: 200px;
+    background-color: #ccc;
+}
+#mainNav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#mainNav ul li{
+    border-bottom: 1px solid #fff;
+    position: relative;
+}
+#mainNav ul li a{
+    text-decoration: none;
+    display: block;
+    width: 85%;
+    padding: 10px 15px;
+}
+#mainNav ul li a:hover{
+    background-color: red;
+    color: #fff;;
+}
+
+#mainNav ul li>ul{
+    position: absolute;
+    margin-left: 200px;
+    width: 200px;
+    background-color: #666;
+    top: 0px;
+    visibility: hidden;
+}
+#mainNav ul li>ul li{
+    border-left: 1px solid #fff;
+}
+#mainNav ul li:hover>ul{
+    visibility: visible;
+}
